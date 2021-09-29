@@ -10,18 +10,112 @@
 </head>
 <body>
     <header class="container-fluid-md bg-warning justify-content-center">
-        <img class="rounded-circle img-fluid" src="logo.png" alt="Logo Danse Luminy">
         <h1 class="col-12 display-2 text-center">Danse Luminy</h1>
         <div class="row align-items-center">
-            <nav class="row navbar navbar-expand-lg justify-content-center">
-                <ul class="navbar-nav text-center">
-                    <li class="col-4 nav-item text-uppercase">Présentation</li>
-                    <li class="col-4 nav-item text-uppercase">Tarifs</li>
-                    <li class="col-4 nav-item text-uppercase">Événements</li>
+            <nav class="border row navbar navbar-expand-lg justify-content-center">
+                <ul class="border navbar-nav text-center">
+                    <li class="border col-3 nav-item text-uppercase">Présentation</li>
+                    <li class="border col-3 nav-item text-uppercase">Planning et Tarifs</li>
+                    <li class="border col-3 nav-item text-uppercase">Événements</li>
+                    <li class="border col-3 nav-item text-uppercase">Nous contacter</li>
                 </ul>
             </nav>
         </div>
     </header>
+    <img class="bg" src="Luminy.png" alt="Campus de Luminy">
+    <section class="Présentation">
+        <h2>Présentation</h2>
+        <p>Nous sommes une association étudiante proposant bénévolement des cours de rock, de salsa cubaine et de west-coast swing.
+        <br/>Le staff est constitué de jeunes danseurs avec une certaine expérience, proposant à qui le souhaite de découvrir les bases de ces danses de couple et d'acquérir un niveau suffisant pour s'amuser et prendre du plaisir pendant les soirées dansantes !
+        <br/>Notre but est avant tout de transmettre une passion, sous différentes formes :</p>
+        <ul>
+            <li>Des cours et ateliers tous les mardis soirs</li>
+            <li>Des soirées dansantes</li>
+            <li>Des initiations à d'autres danses, organisées par de vrais professeurs</li>
+        </ul>
+
+        <p>Les cours ont lieu dans la caféteria CROUS à l'entrée de la faculté de Luminy.</p>
+    </section>
+
+    <section class="Tarifs">
+        <h2>Tarifs et Planning</h2>
+        <p>Toutes ces activités sont entièrement GRATUITES, ne nécessitent AUCUNE INSCRIPTION et sont ouvertes à TOUTE TRANCHE D'AGE et de milieu. Il n'est pas nécessaire d'être étudiant pour en profiter.
+            <br/>Nous sommes ici parce que nous adorons danser et souhaitons partager cette passion avec tout le monde !
+        </p>
+        <p>Les cours ont lieu tous les mardis soir sur ces horaires :</p>
+        <table class="table table-responsive-lg table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Horaires</th>
+                    <th scope="col">Cours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">19h00</th>
+                    <td>West-coast swing</td>
+                </tr>
+                <tr>
+                    <th scope="row">20h00</th>
+                    <td>Salsa</td>
+                </tr>
+                <tr>
+                    <th scope="row">21h00</th>
+                    <td>Rock</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="Événements">
+
+    </section>
+    <section class="Nous contacter container-fluid p-3">
+        <h2>Nous contacter</h1>
+        <form class="py-3 col-md-2 col-ls-3 col-xl-6 m-auto">
+            <div class="row">
+
+                <div class="form-group mb-3">
+                    <label for="name">Nom complet</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nom Prénom" name="name" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="adresse@email.com" aria-describedby="email">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="0600000000" name="phone">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="category">Objet de la demande</label>
+                    <select class="form-control" id="category" name="category">
+                        <option value="inscription">Je veux m'inscrire</option>
+                        <option value="help">Je veux plus d'informations</option>
+                        <option value="other">Autre raison</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
+                </div>
+
+                <button class="send-button btn btn-primary" id="submit" type="submit">Envoyer</button>
+
+                <div class="advert-wrapper">
+                    <p>Souhaitez-vous recevoir nos news ?</p>
+                    <input type="radio" id="yes" name="news-question" value="yes" checked>
+                    <label for="yes">Oui</label>
+                    <input type="radio" id="no" name="news-question" value="no">
+                    <label for="no">Non</label>
+                </div>
+        </form>
+    </section>
+
+
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
