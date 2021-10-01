@@ -23,6 +23,10 @@ section {
   padding: auto;
 }
 
+section {
+  padding-top: 100px;
+}
+
 p {
   text-align: justify;
 }
@@ -30,10 +34,23 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  padding: 4rem;
+  padding: 2rem;
   -webkit-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
   -moz-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
   box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
   border-radius: 20px;
   margin-bottom: 2rem;
+}
+
+.event {
+  width: 300px;
+  height: 300px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
 }

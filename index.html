@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+<!--Balise head avec lien CDN Bootstrap CSS-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible">
@@ -8,22 +9,67 @@
     <title>Danse Luminy</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-    <header class="container-fluid-md bg-warning justify-content-center">
-        <h1 class="col-12 display-2 text-center">Danse Luminy</h1>
-        <div class="row align-items-center">
-            <nav class="border row navbar navbar-expand-lg justify-content-center">
-                <ul class="border navbar-nav text-center">
-                    <li class="border col-3 nav-item text-uppercase">Présentation</li>
-                    <li class="border col-3 nav-item text-uppercase">Planning et Tarifs</li>
-                    <li class="border col-3 nav-item text-uppercase">Événements</li>
-                    <li class="border col-3 nav-item text-uppercase">Nous contacter</li>
-                </ul>
-            </nav>
-        </div>
+    <!--Header contenant la navbar-->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-warning">
+            <div class="container">
+                <a
+                href="#presentation"
+                class="navbar-brand mb-0 h1">
+                    <img class="d-inline-block align-top rounded-circle"
+                    src="logo.png"
+                    width="70"
+                    height="70"/>
+                </a>
+                <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="#presentation" class="nav-link active">Présentation</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <p
+                            class="nav-link dropdown-toggle"
+                            id="navbarDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">Informations</p>
+                            <ul class="dropdown-menu bg-secondary"
+                            aria-labelledby="navbarDropdown">
+                                <li><a href="#informations" class="dropdown-item">Tarifs</a></li>
+                                <li><a href="#tarifs" class="dropdown-item">Planning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#evenements" class="nav-link">Événements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </nav>
+    
     </header>
+
+    <!--Background-->
     <img class="bg" src="Luminy.png" alt="Campus de Luminy">
-    <section class="Présentation">
+
+    <!--Section présentation-->
+    <section id="presentation">
+        <h1 class="display-4 text-center">Danse Luminy</h1>
         <h2>Présentation</h2>
         <p>Nous sommes une association étudiante proposant bénévolement des cours de rock, de salsa cubaine et de west-coast swing.
         <br/>Le staff est constitué de jeunes danseurs avec une certaine expérience, proposant à qui le souhaite de découvrir les bases de ces danses de couple et d'acquérir un niveau suffisant pour s'amuser et prendre du plaisir pendant les soirées dansantes !
@@ -37,12 +83,14 @@
         <p>Les cours ont lieu dans la caféteria CROUS à l'entrée de la faculté de Luminy.</p>
     </section>
 
-    <section class="Tarifs">
-        <h2>Tarifs et Planning</h2>
-        <p>Toutes ces activités sont entièrement GRATUITES, ne nécessitent AUCUNE INSCRIPTION et sont ouvertes à TOUTE TRANCHE D'AGE et de milieu. Il n'est pas nécessaire d'être étudiant pour en profiter.
+    <!--Section Tarifs et planning-->
+    <section id="informations">
+        <h2>Informations</h2>
+
+        <p id="tarifs">Toutes ces activités sont entièrement GRATUITES, ne nécessitent AUCUNE INSCRIPTION et sont ouvertes à TOUTE TRANCHE D'AGE et de milieu. Il n'est pas nécessaire d'être étudiant pour en profiter.
             <br/>Nous sommes ici parce que nous adorons danser et souhaitons partager cette passion avec tout le monde !
         </p>
-        <p>Les cours ont lieu tous les mardis soir sur ces horaires :</p>
+        <p id="planning">Les cours ont lieu tous les mardis soir sur ces horaires :</p>
         <table class="table table-responsive-lg table-hover">
             <thead>
                 <tr>
@@ -66,12 +114,56 @@
             </tbody>
         </table>
     </section>
-    <section class="Événements">
 
+    <!--Section événements-->
+    <section id="evenements">
+        <h2 class="pb-3" >Prochains Événements</h2>
+        <!--Initiation carousel-->
+        <div id="myCarousel" class="carousel slide bg-inverse w-50 ms-auto me-auto" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <!--Éléments composant le carousel-->
+                <div class="carousel-item active">
+                    <div class="card align-items-center bg-secondary text-white">
+                        <img class="event img-fluid rounded d-block w-100" src="https://www.eterritoire.fr/images/eve/14244a0-soiree-rock-n-dijon-cote-d.jpg" alt="First slide">
+                        <p class="type-event text-center h6"> Samedi 09/10/2021</p>
+                        <p class="text-center h3">Soirée Rock</p>
+                        <p class="text-center"> <a class="text-white" href="https://www.rockcaliente.fr/ou-nous-trouver-aix-en-provence">Rock'Caliente</a></p>
+                    </div>
+                </div>
+              <div class="carousel-item">
+                <div class="card align-items-center bg-secondary text-white">
+                    <img class="event rounded d-block w-100" src="https://lh3.googleusercontent.com/proxy/hUvVfeRlQ03YRZ1J5t0r7wdp-wdoqFOHPr4ZiUfIIP0Mckk6Yd1ORpQSV98bxS7WYazy0QVcqmtm32HEQ_wAIgPqsTSXV_X8GjuRQefEuszjKBJ0eV4KLzPyUUVyK8DY-Gg" alt="Second slide">
+                    <p class="type-event text-center h6"> Mardi 12/10/2021</p>
+                    <p class="text-center h3">Soirée toutes danses</p>
+                    <p class="text-center">Danse Luminy</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card align-items-center bg-secondary text-white">
+                    <img class="event rounded d-block w-100" src="https://machronique.com/wp-content/uploads/2021/03/cours-de-salsa.jpg" alt="Third slide">
+                    <p class="type-event text-center h6"> Samedi 30/10/2021</p>
+                    <p class="text-center h3">Soirée SBK</p>
+                    <p class="text-center"> <a class="text-white" href="https://www.rockcaliente.fr/ou-nous-trouver-aix-en-provence">Rock'Caliente</a></p>
+                </div>
+            </div>
+            <!--Fin éléments carousel-->
+            <!--Boutons de contrôle du carousel-->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        <!--Fin carousel-->
     </section>
+
+    <!--Section formulaire de contact-->
     <section class="Nous contacter container-fluid p-3">
         <h2>Nous contacter</h1>
-        <form class="py-3 col-md-2 col-ls-3 col-xl-6 m-auto">
+        <form class="py-3 col-6 m-auto">
             <div class="row">
 
                 <div class="form-group mb-3">
@@ -115,9 +207,8 @@
         </form>
     </section>
 
-
-
+    
+<!--Lien CDN pour JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 </html>
