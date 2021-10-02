@@ -1,5 +1,12 @@
-img{
-  float: left;
+body {
+  font-weight: 500;
+  color:white;
+}
+
+#logo {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
 }
 
 .container-image {
@@ -14,17 +21,39 @@ img{
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
   z-index: -10;
+  opacity: 1;
+  filter: brightness(30%);
+}
+
+nav {
+  font-size: 20px;
+}
+
+h1 {
+  display: block;
+  align-content: center;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em;
 }
 
 section {
   margin: 20px;
-  padding: auto;
+  padding-top: 100px;
 }
 
-section {
-  padding-top: 100px;
+h2 {
+  margin-bottom: 100px;
 }
 
 p {
@@ -42,10 +71,22 @@ form {
   margin-bottom: 2rem;
 }
 
-.event {
-  width: 300px;
-  height: 300px;
-}
+
+@media screen and (min-width: 650px) {
+  .contient-carousel {
+    width: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  }
+
+@media screen and (min-width: 960px) {
+  .contient-carousel {
+    width: 33%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
   outline: black;
@@ -53,4 +94,9 @@ form {
   background-size: 100%, 100%;
   border-radius: 50%;
   border: 1px solid black;
+}
+
+footer p, footer ul li {
+  padding: 0px;
+  margin: 0px;
 }

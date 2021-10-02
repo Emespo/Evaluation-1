@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.Danse-Luminy.com/schemas/sitemap/0">
+  <url>
+    <loc>www.Danse-Luminy.com/</loc>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://mon-domaine.fr/Contact</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>
