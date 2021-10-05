@@ -101,6 +101,10 @@ form {
   border: 1px solid black;
 }
 
+input::placeholder {
+  color: black;
+}
+
 footer p, footer ul li {
   padding: 0px;
   margin: 0px;

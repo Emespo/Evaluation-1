@@ -72,27 +72,28 @@
     <!--Section formulaire de contact-->
     <section class="contact container-fluid p-3">
         <h2>Nous contacter</h2>
-        <form class="col-md-6 m-auto">
+        <form class="col-lg-6 col-sm-10 m-auto">
             <div class="row">
 
                 <div class="form-group mb-3">
                     <label for="name">Nom complet</label>
-                    <input type="text" class="form-control" id="name" placeholder="Nom Prénom" name="name" required>
+                    <input type="text" class="form-control opacity-50" id="name" placeholder="Nom Prénom" name="name" required>
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="email">E-mail</label>
-                    <input type="email" class="form-control" id="email" placeholder="adresse@email.com" aria-describedby="email">
+                    <input type="email" class="form-control opacity-50" id="email" placeholder="adresse@email.com" aria-describedby="email">
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="phone">Téléphone</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="0600000000" name="phone">
+                    <input type="tel" class="form-control opacity-50" id="phone" placeholder="0600000000" name="phone">
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="category">Objet de la demande</label>
-                    <select class="form-control" id="category" name="category">
+                    <select class="form-select" id="category" name="category">
+                        <option selected disabled value="">Merci de choisir une option ...</option>
                         <option value="inscription">Je veux m'inscrire</option>
                         <option value="help">Je veux plus d'informations</option>
                         <option value="other">Autre raison</option>
@@ -101,7 +102,7 @@
 
                 <div class="form-group mb-3">
                     <label for="message">Message</label>
-                    <textarea class="form-control" rows="6" id="message" name="message" required></textarea>
+                    <textarea class="form-control opacity-50" rows="6" id="message" name="message" required></textarea>
                 </div>
 
                 <button class="send-button btn btn-primary" id="submit" type="submit">Envoyer</button>
@@ -116,6 +117,16 @@
         </form>
     </section>
 
+    <footer class="page-footer bg-dark">
+        <p class="display-6 text-warning text-center ">Danse Luminy</p>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-secondary">
+            <li class="nav-item"><a href="index.html#presentation" class="nav-link px-2 text-muted">Présentation</a></li>
+            <li class="nav-item"><a href="index.html#tarifs" class="nav-link px-2 text-muted">Informations</a></li>
+            <li class="nav-item"><a href="index.html#evenements" class="nav-link px-2 text-muted">Événements</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+        </ul>
+        <p class="text-center text-muted">©Danse Luminy</p>
+    </footer>
     
 <!--Lien CDN pour JS Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
